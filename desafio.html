@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <!--cabecalho menu-hamburguer-->
+        <div class="logo__cabecalho">
+            <img src="img/logo-cabecalho.png" alt="logo icones deficiências" class="logo__cabecalho-mobile">
+        </div>        
+        <div class="container__menu">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>        
+           <ul class="lista__menu">
+                <li class="lista__menu-item"><a href="index.html" class="lista__menu-link">Home</a></li>
+                <li class="lista__menu-item"><a href="projeto.html" class="lista__menu-link">Projeto</a></li>
+                <li class="lista__menu-item"><a href="proposta.html" class="lista__menu-link">Proposta</a></li>
+                <li class="lista__menu-item"><a href="desafio.html" class="lista__menu-link">Desafios</a></li>
+                <li class="lista__menu-item"><a href="parceiros.html" class="lista__menu-link">Parceiros</a></li>
+           </ul>
+        </div> 
+        <!--Cabeçalho para versões Desktop/Tablet-->
+    
+        <div class="logo__deficiencias-cabecalho">
+            <img src="img/logo-cabecalho.png" alt="imagem de icones de deficiências" class="logo__deficiencias">
+        </div>
+        
+        
+        <nav class="container__cabecalho">
+                <ul class="lista__cabecalho">
+                    <li><a href="index.html" class="lista__cabecalho--item">Home</a></li>
+                    <li><a href="projeto.html" class="lista__cabecalho--item">Projeto</a></li=>
+                    <li><a href="proposta.html" class="lista__cabecalho--item">Proposta</a></li>
+                    <li><a href="desafio.html" class="lista__cabecalho--item">Desafios</a></li>
+                    <li><a href="parceiros.html" class="lista__cabecalho--item">Parceiros</a></li>
+                </ul>
+            </div>
+        </nav>      
+    </header>
+    <section class="desafio">
+        <div class="container__page">
+            <h1 class="desafio__titulo">Os Desafios para a Inclusão por meio do Esporte</h1>
+            <p class="desafio__titulo--paragrafo">
+                Foi realizado uma pesquisa com 210 participantes, com a temática esporte em ambiente escolar juntamente com a abordagem da inclusão
+                 e do esporte adaptado para estudantes deficientes, o resultado permite pontuar os três maiores desafios para a inclusão por meio do esporte.
+            </p>
+            
+            <!---seção para gráfico em javascript--->
+            <section class="grafico">
+                <div id="piechart_3d" style="width: 700px; height: 300px;"></div>
+        </div>
+        </section>        
+
+    </section>
+    <section class="depoimentos">
+        <div class="container__page">
+        <h1 class="descricao__depoimentos">Alguns depoimentos dos participantes da pesquisa</h1>
+        <img src="img/depoimento1.png" alt="Imagem do depoimento da pesquisa" class="descricao__depoimentos--imagem">
+        <img src="img/depoimento2.png" alt="Imagem do depoimento da pesquisa" class="descricao__depoimentos--imagem">
+        <img src="img/depoimento3.png" alt="Imagem do depoimento da pesquisa" class="descricao__depoimentos--imagem">
+        <img src="img/depoimento4.png" alt="Imagem do depoimento da pesquisa" class="descricao__depoimentos--imagem">
+
+        </div>
+        
+    </section>
+        <!---seção ranking/classificação para versão mobile--->
+        <section class="ranking">
+            <div class="container__page">
+                <div class="classificacao">
+                    <img src="img/medalha-de-ouro.png" alt="icone de medalha de ouro" class="medalhas">
+                    <h class="ranking__titulo">Ausência de Acessibilidade</h>
+                    <p class="ranking__titulo--texto">Para 40,7% dos participantes, o maior desafio é a ausência de acessibilidade no ambiente escolar.</p>
+                </div>
+                <div class="classificacao">
+                    <img src="img/medalha-de-prata.png" alt="icone de medalha de prata" class="medalhas">
+                    <h class="ranking__titulo">Professores Capacitados</h>
+                    <p class="ranking__titulo--texto">Para 24,4% dos participantes, o desafio é encontrar professores capacitados sobre o tema. </p>
+                </div>
+                <div class="classificacao">
+                    <img src="img/medalha-de-bronze.png" alt="icone de medalha de bronze" class="medalhas">
+                    <h class="ranking__titulo">Divulgação do Evento</h>
+                    <p class="ranking__titulo--texto">Para 12,4% dos participantes, o terceiro maior desafio é a divulgação e informações sobre os eventos que abordam a temática inclusiva por meio do esporte. </p>
+                </div>
+            </div>  
+        </section>
+
+        <footer class="rodape">
+            <div class="container__page">
+                <p class="rodape__texto">&copy; 2022 - Projeto Educacional Esporte Para Todos </p><br>
+                <p class="rodape__texto"> | Todos os direitos reservados</p>
+            </div>
+           
+        </footer>  
+    <!--Script para gráfico--->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Question', 'The amount'],
+          ['Acessibilidade', 85],
+          ['Apoio da Comunidade', 24],
+          ['Professores Capacitados',  51],
+          ['Divulgação', 26],
+          ['Procura por parte dos responsáveis', 15],
+          ['Outros', 9],
+          
+          
+        ]);
+
+        var options = {
+          title: 'Os desafios da inclusão por meio do esporte',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+</body>
+</html>

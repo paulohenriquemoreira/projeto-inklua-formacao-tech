@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <!--cabecalho menu-hamburguer-->
+        <div class="logo__cabecalho">
+            <img src="img/logo-cabecalho.png" alt="logo icones deficiências" class="logo__cabecalho-mobile">
+        </div>        
+        <div class="container__menu">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>        
+           <ul class="lista__menu">
+                <li class="lista__menu-item"><a href="index.html" class="lista__menu-link">Home</a></li>
+                <li class="lista__menu-item"><a href="projeto.html" class="lista__menu-link">Projeto</a></li>
+                <li class="lista__menu-item"><a href="proposta.html" class="lista__menu-link">Proposta</a></li>
+                <li class="lista__menu-item"><a href="desafio.html" class="lista__menu-link">Desafios</a></li>
+                <li class="lista__menu-item"><a href="parceiros.html" class="lista__menu-link">Parceiros</a></li>
+           </ul>
+        </div> 
+        <!--Cabeçalho para versões Desktop/Tablet-->
+    
+        <div class="logo__deficiencias-cabecalho">
+            <img src="img/logo-cabecalho.png" alt="imagem de icones de deficiências" class="logo__deficiencias">
+        </div>
+        
+        
+        <nav class="container__cabecalho">
+                <ul class="lista__cabecalho">
+                    <li><a href="index.html" class="lista__cabecalho--item">Home</a></li>
+                    <li><a href="projeto.html" class="lista__cabecalho--item">Projeto</a></li=>
+                    <li><a href="proposta.html" class="lista__cabecalho--item">Proposta</a></li>
+                    <li><a href="desafio.html" class="lista__cabecalho--item">Desafios</a></li>
+                    <li><a href="parceiros.html" class="lista__cabecalho--item">Parceiros</a></li>
+                </ul>
+            </div>
+        </nav>      
+    </header>
+    <section class="projeto">
+        <div class="container__page">
+            <h1 class="projeto__titulo">Projeto Educacional Esporte Para Todos</h1>
+            <div class="rellax" data-rellax-speed="10">
+                <img src="img/logo.png" alt="Imagem do Logo do Projeto com nome do projeto" class="logo__projeto" data-rellax-speed="6">
+                <p class="projeto__titulo--paragrafo" data-rellax-speed="4">O projeto educacional esporte para todos é a junção de profissionais como o agente de inclusão,
+                    seguido de professores de diversas modalidades de esportes, juntamente com apoio e acompanhamento de psicólogos, psicomotricistas entre outros,
+                     que irão auxiliar na abordagem dos mais diversos ramos do esporte, com o objetivo de trazer para o ambiente da escola pública, uma variedade de esportes adaptados para incluir nas práticas educativas do ensino básico e fundamental.</p>
+                    <img src="img/volei-sentado.jpg" alt="crianças jogando volei volei-sentado" class="volei__sentado" data-rellax-speed="6">
+                     <p class="projeto__titulo--paragrafo" data-rellax-speed="2">A adoção do esporte e o acompanhamento permite a prática da educação inclusiva por meio do esporte, onde deixará de existe os eventos esportivos como os interclasses,
+                       que visam somente uma parte dos estudantes, mas permite que os estudantes que possuem algum tipo de deficiência possam sentir o gosto da competição e a prática do esporte que ama.
+                   Cabe destacar que, essa iniciativa visa combater o déficit da oportunidade no esporte no ensino público, principalmente nas localidades mais vulneráveis socialmente, como comunidades de baixa renda,
+                    onde a inclusão enfrenta níveis maiores de dificuldades.</p>
+            </div>
+        </div>        
+    </section>
+    <footer class="rodape">
+        <div class="container__page">
+            <p class="rodape__texto">&copy; 2022 - Projeto Educacional Esporte Para Todos </p><br>
+            <p class="rodape__texto"> | Todos os direitos reservados</p>
+        </div>
+       
+    </footer>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
+</body>
+</html>

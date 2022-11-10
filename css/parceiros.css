@@ -1,0 +1,141 @@
+.parceiros{
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.parceiros__titulo{
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--azul-texto);
+    padding: 1rem 0;
+}
+
+.parceiros__titulo--paragrafo{
+    font-family: var(--fonte-texto);
+    color: var(--azul-texto);
+    text-align: center;
+    padding: 1rem;
+    line-height: 2;
+}
+
+
+.container__parceiros{
+    display: flex;
+    margin: 0 auto;
+}
+
+.parceiros__lista{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.parceiros__itens{
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    margin: 3px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+    background-color: var(--branco);
+}
+
+.parceiros__itens:hover{
+    border: 2px solid red;
+    background-color: var(--azul-claro);
+}
+
+.parceiros__texto{
+    color: var(--azul-background);
+    font-size: 12px;
+    font-family: var(--fonte-texto);
+    text-align: justify;
+    line-height: 2rem;
+    padding: 0.5rem;
+}
+
+.parceiros__texto:hover{
+    color: var(--branco);
+}
+.parceiros__imagens{
+    width: 15%;
+    height: 15%;
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .parceiros__titulo{
+        font-size: 5rem;        
+        padding: 2rem 0;
+    }
+
+    .parceiros__titulo--paragrafo{
+        font-size: 1.5rem;
+        padding: 2rem;
+        line-height: 2;
+    }
+
+    .parceiros__itens{
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    .parceiros__texto{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .parceiros__titulo{
+        font-size: 5rem;
+        
+    }
+    .parceiros__titulo--paragrafo{
+        font-size: 1.5rem;
+    }
+    .parceiros__itens{
+        padding: 3rem;
+        margin: 0.5rem;
+    }
+
+    .parceiros__texto{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .parceiros__lista{
+        padding: 8rem;
+    }
+
+    .parceiros__imagens{
+        width: 25%;
+        height: 25%;
+        padding: 0.5rem;
+    }
+    
+}
+
+@media screen and (min-width: 1920px) {
+    .parceiros__itens{
+        padding: 8rem;
+        margin: 1rem;
+    }
+
+    .parceiros__texto{
+        font-size: 2rem;
+    }
+    .parceiros__imagens{
+        width: 40%;
+        height: 40%;
+        padding: 0.5rem;
+    }
+
+}

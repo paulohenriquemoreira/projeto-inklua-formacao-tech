@@ -1,0 +1,115 @@
+.desafio{
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.desafio__titulo{
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--azul-texto);
+    padding: 1rem 0;
+}
+
+.desafio__titulo--paragrafo{
+    font-family: var(--fonte-texto);
+    color: var(--azul-texto);
+    text-align: center;
+    padding: 1rem;
+    line-height: 2;
+}
+
+.ranking{
+    display: block;
+    padding: 2rem 1rem;
+    background-color: var(--branco);
+}
+
+.classificacao{
+    display: flex;
+    align-items: center;
+}
+
+.medalhas{
+    width: 10%;
+}
+
+.ranking__titulo{
+    color: var(--azul-background);
+    font-size: 18px;
+    font-family: Pacifico;
+    text-align: center;
+    padding: 10px;
+}
+
+.ranking__titulo--texto{
+    color: var(--azul-background);
+    font-size: 12px;
+    font-family: Roboto;
+    text-align: center;
+    padding: 15px;
+}
+
+.grafico,.depoimentos{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .desafio__titulo{        
+        font-size: 5rem;        
+        padding: 2rem 0;
+    }
+
+    .desafio__titulo--paragrafo{
+        font-size: 1.5rem;
+        padding: 2rem;
+        line-height: 2;
+    }
+
+    .ranking{
+        display: none;
+    }
+
+    .depoimentos{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;    
+        padding: 2rem 3rem;
+        
+            
+    }
+    
+    .descricao__depoimentos{
+        color: var(--azul-background);
+        font-size: 3rem;
+        font-family: Pacifico;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+    
+    .descricao__depoimentos--imagem{
+        box-shadow: 1px 1px 4px black;
+        border-radius: 15px;
+        margin: 8px;
+        width: 100%;
+    }
+    .descricao__depoimentos--imagem:hover{
+        box-shadow: 2px 2px 6px #134074;
+        
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .descricao__depoimentos--imagem{
+        width: 100%;
+        box-shadow: 2px 2px 6px black;
+        border-radius: 1rem;
+        margin: 1rem;
+    }
+
+}

@@ -1,0 +1,217 @@
+.home__projeto,.home__desafio{
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.home__proposta,.home__parceiros{
+    background-color: var(--azul-background);
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__projeto__titulo,.home__desafio__titulo{
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--azul-texto);
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+.home__proposta__titulo,.home__parceiros__titulo{
+    color: var(--branco);
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.home__projeto__titulo--paragrafo,.home__desafio__titulo--paragrafo{
+    font-family: var(--fonte-texto);
+    color: var(--azul-texto);
+    text-align: center;
+    padding: 1rem;
+    line-height: 2;
+}
+
+.home__proposta__titulo--paragrafo,.home__parceiros__titulo--paragrafo{
+    font-family: var(--fonte-texto);
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem;
+    line-height: 2;
+}
+
+
+/*seção newsletter*/
+
+.assine{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+.assine__texto{
+	font-family: Roboto;
+    font-size: 14px;
+    text-align: center;
+    color: var(--azul-background);
+    
+    
+}
+
+.assine__input--padrao {
+ width: 70%;
+ border-radius:8px;
+ border: 1px solid var(--azul-background);
+ padding: 5px;
+ margin:  1rem;
+}
+
+.carrossel,.logo__deficiencias,.container__cabecalho,.home__proposta-imagens,.projeto__imagem,.imagem__desafio,.home_parceiros--imagem,.logo_projeto--tablet{
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+   
+    .imagem__projeto-mobile,.imagem__proposta-mobile,.imagem__desafio-mobile,.imagem__parceiros-mobile{
+        display: none;
+    }
+
+    .logo__deficiencias,.container__cabecalho{
+        display: block;
+    }
+
+    .logo_projeto--tablet{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+        background-color: var(--branco);
+        
+    }
+
+    .logo__projeto--tablet-centralizado{
+     width: 90%;
+
+    }
+            
+    .home__projeto,.home_proposta,.home__desafio,.home_parceiros{
+    padding: 6rem auto;
+    }
+   .home__projeto__titulo,.home__proposta__titulo,.home__desafio__titulo,.home__parceiros__titulo{
+    font-size: 5rem;
+    padding: 2rem 0;
+    }
+    .home__projeto__titulo--paragrafo,.home__proposta__titulo--paragrafo,.home__desafio__titulo--paragrafo,.home__parceiros__titulo--paragrafo{
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .projeto__imagem{
+        margin-bottom: 3rem;
+    }
+
+
+    .assine{        
+        padding: 4rem;        
+    }
+    .assine__texto{        
+        font-size: 34px;    
+                
+    }
+    .assine__input--padrao {
+        padding: 10px;   
+        width: 30%;     
+    }
+    .home__proposta-imagens{
+        display:block;
+        padding: 2rem;
+    }
+
+    .home__proposta--lista{
+        display:flex;
+        align-items: center;        
+    }
+
+    .home__proposta--lista--item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .home__proposta--icone{
+        width:50%;
+        margin-bottom: 1rem;
+        margin-bottom: 3rem;
+           
+    }
+
+
+    .home__proposta--lista--paragrafo{
+        text-decoration: none;
+        color: var(--branco);
+        font-family: var(--fonte-texto);
+    }
+
+    .imagem__desafio{
+        width: 30%;
+        border-bottom: 5px solid var(--preto);
+        margin-bottom: 3rem;
+    }
+
+    .home_parceiros--imagem{
+        width: 20%;
+        margin-bottom: 3rem;
+    }
+
+    
+}
+
+@media screen and (min-width: 1280px) {
+    .carrossel{
+        display: block;
+        margin-bottom: 2rem;
+    }
+     
+    .swiper-slide img {
+        width: 800px;
+        height: 600px;
+    }
+    
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+    }
+    
+    .swiper-pagination {
+        position: initial;
+        margin: 2em 0;
+    }
+    
+    .swiper-scrollbar{
+        display: none;
+    }
+
+    .logo_projeto--tablet-centralizado{
+        width: 80%;
+    }
+    
+}
+
+@media screen and (min-width: 1920px) {
+    .logo_projeto--tablet-centralizado{
+        width: 60%;
+    }
+}
+

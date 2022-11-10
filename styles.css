@@ -1,0 +1,32 @@
+@import url("css/base/reset.css");
+@import url("css/base/header.css");
+@import url("css/base/botao.css");
+@import url("css/base/rodape.css");
+@import url("css/secoes-home.css");
+@import url("css/projeto.css");
+@import url("css/proposta.css");
+@import url("css/desafio.css");
+@import url("css/parceiros.css");
+@import url("css/base/container-page.css");
+
+
+
+
+:root{
+    --azul-background:#0B2545;
+    --azul-texto:#13315C;
+    --azul-hover:#134074;
+    --azul-claro:#8DA9C4;
+    --azul-claro-background:#EEF4ED;
+    --cinza: rgb(182, 182, 182);
+    --preto: #000000;
+    --branco: #ffffff;
+    --fonte-titulo: Pacifico;
+    --fonte-texto: Roboto;
+    
+
+}
+
+body{
+    background-color: var(--azul-claro-background);
+}
