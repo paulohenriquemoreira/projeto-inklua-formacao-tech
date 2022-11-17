@@ -75,6 +75,9 @@
                 <div class="swiper-scrollbar"></div>
             </div>
 </section>
+<section class="hand__talk">
+   
+</section>
 <section class="logo_projeto--tablet">
     <img src="img/logo.png" alt="logo do projeto educacional esporte para todos" class="logo__projeto--tablet-centralizado">
 </section>     
@@ -189,6 +192,23 @@
         },
         });
     </script> 
+     <script src="https://plugin.handtalk.me/web/latest/handtalk.min.js"></script>
+     <script>
+       var ht = new HT({
+         // Troque por seu token de acesso
+         token: "<TOKEN>",
+         // Muda o avatar para o HUGO
+         avatar: "HUGO",
+         // Muda o alinhamento para cima 
+         align: "top",
+         // Muda o lado para a direita
+         side: "right",
+         // Muda a opacidade inicial do plugin
+         opacity: 50,
+         // Inicia o plugin com o modo escuro ativado
+         highContrast: true
+       });
+     </script>
     
 </body>
 </html>
